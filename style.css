@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.game-container {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(7, 80px);
+    grid-template-rows: repeat(6, 80px);
+    gap: 5px;
+    background-color: #007bff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.cell {
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.player1 {
+    background-color: red;
+}
+
+.player2 {
+    background-color: yellow;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#status {
+    margin-top: 10px;
+    font-size: 18px;
+}
